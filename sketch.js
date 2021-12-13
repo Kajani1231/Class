@@ -1,13 +1,39 @@
-const Engine = Matter.Engine;
-const World = Matter.World;
-const Bodies = Matter.Bodies;
-const Constraint = Matter.Constraint;
+
+function setup() {
+  createCanvas(400,400);
+  background(51);
+  box = createSprite(200,200,30,30);
 
 }
 
-fu
-function keyReleased() {
-  if (keyCode === DOWN_ARROW) {
-    balls[balls.length - 1].shoot();
+function draw() 
+{
+
+  if (keyIsDown(RIGHT_ARROW))
+  {
+background("red")
+
   }
+
+  if (keyIsDown(LEFT_ARROW)) 
+  {
+    background("blue");
+    
+  }
+ 
+    if (keyIsDown(UP_ARROW)) 
+  {
+    background("yellow");
+   
+  }
+
+  if (keyIsDown(DOWN_ARROW)) 
+  {
+    background("green");
+  }
+
+
+  
+  drawSprites();
 }
+
